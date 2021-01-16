@@ -11,5 +11,5 @@ app.use(bodyParser.json());
 
 app.use(controller.receiveMessage);
 
-const PORT = process.env.PORT;
+const PORT = process.env.FRONT_PORT;
 app.listen(PORT, () => console.log(`listen to port ${PORT}`));
